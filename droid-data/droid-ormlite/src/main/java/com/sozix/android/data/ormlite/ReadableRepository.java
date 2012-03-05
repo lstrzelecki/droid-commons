@@ -18,4 +18,6 @@ public interface ReadableRepository<E, PK> {
 	void refresh(Collection<E> entity);
 
 	void refresh(E entity);
+
+	public boolean exists(PK id);
 }
