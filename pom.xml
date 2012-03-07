@@ -23,8 +23,8 @@
 	</modules>
 
 	<scm>
-		<connection>scm:git:git:@github.com:lstrzelecki/superpom.git</connection>
-		<url>scm:git:git:@github.com:lstrzelecki/superpom.git</url>
+		<connection>scm:git:git:@github.com:lstrzelecki/droid-commons.git</connection>
+		<url>scm:git:git:@github.com:lstrzelecki/droid-commons.git</url>
 	</scm>
 
 	<repositories>
