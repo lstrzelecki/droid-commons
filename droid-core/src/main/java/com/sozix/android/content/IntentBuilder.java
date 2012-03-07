@@ -26,6 +26,12 @@ public class IntentBuilder {
 		return this;
 	}
 
+	public IntentBuilder withInt(String key, Integer integer) {
+		bundle.putInt(key, integer);
+		return this;
+	}
+
+
 	public Intent build() {
 		intent.putExtras(bundle);
 		return intent;
