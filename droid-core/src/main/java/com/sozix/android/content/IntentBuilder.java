@@ -12,28 +12,33 @@ import java.io.Serializable;
  */
 public class IntentBuilder {
 
-	private Intent intent;
+    private Intent intent;
 
-	private Bundle bundle;
+    private Bundle bundle;
 
-	public IntentBuilder(Activity from, Class to) {
-		bundle = new Bundle();
-		intent = new Intent(from, to);
-	}
+    public static IntentBuilder intent(Activity from, Class to) {
+        return new IntentBuilder(from, to);
+    }
 
-	public IntentBuilder withSerializable(String key, Serializable object) {
-		bundle.putSerializable(key, object);
-		return this;
-	}
+    private IntentBuilder(Activity from, Class to) {
+        bundle = new Bundle();
+        intent = new Intent(from, to);
+    }
 
-	public IntentBuilder withInt(String key, Integer integer) {
-		bundle.putInt(key, integer);
-		return this;
-	}
+    public IntentBuilder withSerializable(String key, Serializable object) {
+        bundle.putSerializable(key, object);
+        return this;
+    }
 
+    public IntentBuilder withInt(String key, Integer integer) {
+        bundle.putInt(key, integer);
+        return this;
+    }
 
-	public Intent build() {
-		intent.putExtras(bundle);
-		return intent;
-	}
+    public Intent build() {
+        if (!bundle.isEmpty()) {
+            intent.putExtras(bundle);
+        }
+        return intent;
+    }
 }
