@@ -1,6 +1,6 @@
 package com.sozix.android.data.ormlite;
 
-import java.util.List;
+import java.util.Collection;
 
 /**
  * @author Lukasz Strzelecki
@@ -10,11 +10,11 @@ public interface ModifiableRepository<E, PK> {
 
 	E persist(E entity);
 
-	List<E> persist(List<E> entities);
+	Collection<E> persist(Collection<E> entities);
 
 	void remove(E entity);
 
-	void remove(List<E> entity);
+	void remove(Collection<E> entity);
 
 	void removeAll();
 }
