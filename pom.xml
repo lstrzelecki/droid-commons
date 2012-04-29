@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.sozix.superpom</groupId>
 		<artifactId>superpom-android</artifactId>
-		<version>0.0.4</version>
+		<version>0.0.5</version>
 	</parent>
 
 	<groupId>com.sozix.droid.commons</groupId>
