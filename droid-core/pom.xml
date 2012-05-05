@@ -14,10 +14,6 @@
 			<artifactId>android</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.roboguice</groupId>
-			<artifactId>roboguice</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.android</groupId>
 			<artifactId>spring-android-core</artifactId>
 		</dependency>

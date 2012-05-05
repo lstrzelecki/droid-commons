@@ -1,13 +1,13 @@
 package com.sozix.android;
 
+import android.app.Application;
 import android.content.Context;
-import roboguice.application.RoboApplication;
 
 /**
  * @author Lukasz Strzelecki
  * @since 0.0.1
  */
-public abstract class AbstractApp extends RoboApplication {
+public abstract class AbstractApp extends Application {
 
 	protected static Context applicationContext;
 
