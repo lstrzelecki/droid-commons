@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.sozix.droid.commons</groupId>
 		<artifactId>droid-data</artifactId>
-		<version>0.0.4</version>
+		<version>0.0.5-SNAPSHOT</version>
 	</parent>
 	<artifactId>droid-ormlite</artifactId>
 	<name>${project.artifactId}-${project.version}</name>
