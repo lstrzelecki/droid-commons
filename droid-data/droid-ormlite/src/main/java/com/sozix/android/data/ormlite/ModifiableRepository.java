@@ -17,4 +17,6 @@ public interface ModifiableRepository<E, PK> {
 	void remove(Collection<E> entity);
 
 	void removeAll();
+
+    void removeByPrimaryKey(PK id);
 }
